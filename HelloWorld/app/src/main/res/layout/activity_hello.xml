@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HelloActivity">
+
+    <TextView
+        android:id="@+id/textEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar activity secundario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="initSecundaryActivity"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:onClick="createAlarm"
+        android:text="Crear alarma"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="6dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="callPhone"
+        android:text="llamar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chapa"
+        android:onClick="breakdownChecked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chapa y pintura" />
+
+    <CheckBox
+        android:id="@+id/cristal"
+        android:onClick="breakdownChecked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rotura cristal" />
+
+    <CheckBox
+        android:id="@+id/mecanica"
+        android:onClick="breakdownChecked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Avería mecánica" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        app:srcCompat="@drawable/ic_extension_red_24dp" />
+
+</LinearLayout>
